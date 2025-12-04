@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Ackerman | Mechanical Engineering Consulting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #2a5298;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        h2 {
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #2a5298;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #2a5298;
+        }
+        
+        .service-card h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        
+        .experience-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            color: #2a5298;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .company {
+            color: #495057;
+            font-style: italic;
+        }
+        
+        .date {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            border: none;
+        }
+        
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            transition: border-color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            border-color: white;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .skills-list li {
+            background: #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            
+            section {
+                padding: 2rem 1.5rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Ackerman</h1>
+        <p>Mechanical Engineering Consulting | Product Design | Systems Innovation</p>
+    </header>
+    
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>Engineering with Vision</h2>
+            <p>I'm a mechanical engineer with a unique perspective that combines rigorous technical expertise with creative systems thinking. With a BS/MEng from Rochester Institute of Technology (Summa Cum Laude) and experience spanning additive manufacturing, machine design, and software integration, I help companies solve complex engineering challenges.</p>
+            <p>My interdisciplinary background—including music, visual arts, and education—informs a holistic approach to engineering that considers not just the mechanics, but the entire system and user experience.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Consulting Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Product Development</h3>
+                    <p>From concept to production, including CAD modeling, prototyping, testing, and iteration.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Machine Design & Optimization</h3>
+                    <p>Industrial machine design, electro-mechanical systems, and design for manufacturing with expertise in SolidWorks and NX Unigraphics.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Additive Manufacturing</h3>
+                    <p>3D printing strategy, design for additive manufacturing, and rapid prototyping solutions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Automation & Controls</h3>
+                    <p>Machine automation, C++ programming for industrial systems, and efficiency improvements.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Patent Support</h3>
+                    <p>Technical patent writing and drafting for mechanical inventions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Technical Analysis</h3>
+                    <p>FEA analysis with ANSYS, data analytics with Python/SQL, and engineering problem-solving.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">Mechanical/Software Engineer</div>
+                <div class="company">James L. Taylor Manufacturing</div>
+                <div class="date">May 2016 - Aug 2016 & April 2021 - April 2022</div>
+                <ul>
+                    <li>Implemented autonomous saw system to boost manufacturing efficiency</li>
+                    <li>Designed and improved industrial electro-mechanical machine parts in SolidWorks</li>
+                    <li>Wrote C++ programs to add functionality to machinery</li>
+                    <li>Manufactured, assembled, tested, installed, and serviced machinery to ensure customer satisfaction</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">Systems Engineering Intern</div>
+                <div class="company">GE Aviation</div>
+                <div class="date">May 2017 - Aug 2017</div>
+                <ul>
+                    <li>Utilized SQL and Python to query flight engine data and create analytics to track and evaluate engine health</li>
+                    <li>Organized data analytics tools and led meetings to empower systems engineering team</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">Test Lab Engineering Intern</div>
+                <div class="company">Unison Industries</div>
+                <div class="date">Aug 2016 - Dec 2016</div>
+                <ul>
+                    <li>Designed 3D printed camera mount in NX Unigraphics for wind tunnel testing</li>
+                    <li>Improved and simplified LabVIEW programs used in testing environments</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">Technical Patent Advisor & Draftsman</div>
+                <div class="company">Saile Ackerman LLC</div>
+                <div class="date">May 2015 - Aug 2015 & Sept 2020 - March 2021</div>
+                <ul>
+                    <li>Wrote patent applications for mechanical inventions</li>
+                    <li>Created technical patent drawings and documentation</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="approach">
+            <h2>My Approach</h2>
+            <p>I bring a systems-thinking approach to engineering that goes beyond solving the immediate problem. My background in multiple disciplines allows me to:</p>
+            <ul>
+                <li><strong>See the bigger picture</strong> – Understanding how individual components fit into larger systems</li>
+                <li><strong>Innovate creatively</strong> – Drawing on diverse influences to find novel solutions</li>
+                <li><strong>Communicate clearly</strong> – Translating technical concepts for diverse stakeholders</li>
+                <li><strong>Design holistically</strong> – Considering manufacturability, sustainability, and user experience from the start</li>
+            </ul>
+            
+            <h3>Technical Skills</h3>
+            <ul class="skills-list">
+                <li>SolidWorks & NX Unigraphics</li>
+                <li>3D CAD Modeling</li>
+                <li>ANSYS FEA</li>
+                <li>C++, Python, SQL</li>
+                <li>LabVIEW</li>
+                <li>Additive Manufacturing</li>
+                <li>Machine Design & Testing</li>
+                <li>Technical Documentation</li>
+            </ul>
+        </section>
+        
+        <section class="cta-section" id="contact">
+            <h2>Let's Work Together</h2>
+            <p>Whether you need product design, machine optimization, or engineering problem-solving, I'd love to discuss how I can help your project succeed.</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:johnackerman09@gmail.com">johnackerman09@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:845-475-4508">(845) 475-4508</a></p>
+                <p><strong>Location:</strong> New York, United States</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
